@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../apps/web/node_modules/wrangler/config-schema.json",
+  "name": "bnafsaji-quote-binding-test",
+  "main": "./worker.js",
+  "compatibility_date": "2026-10-21",
+  "workers_dev": false,
+  "preview_urls": false,
+  "services": [
+    { "binding": "QUOTE_SERVICE", "service": "bnafsaji-quote-internal" }
+  ]
+}

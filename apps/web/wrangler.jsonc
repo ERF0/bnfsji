@@ -1,0 +1,16 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "bnafsaji-web",
+	"compatibility_date": "2026-10-21",
+	"main": "./workers/app.js",
+	"compatibility_flags": ["nodejs_compat"],
+	"services": [
+		{ "binding": "QUOTE_SERVICE", "service": "bnafsaji-quote-internal" }
+	],
+	"observability": {
+		"enabled": true,
+		"head_sampling_rate": 0.1,
+		"logs": { "enabled": true, "invocation_logs": true },
+		"traces": { "enabled": true, "head_sampling_rate": 0.1 }
+	}
+}

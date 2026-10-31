@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1248 1248" width="1248" height="1248">
+<defs>
+ <radialGradient id="bg"><stop stop-color="#07143b"/><stop offset="1" stop-color="#020b28"/></radialGradient>
+ <linearGradient id="lav" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e2ccff"/><stop offset=".52" stop-color="#c9a7fa"/><stop offset="1" stop-color="#ae7df4"/></linearGradient>
+ <linearGradient id="light" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#e2ccff"/><stop offset="1" stop-color="#c6a4fa"/></linearGradient>
+ <linearGradient id="wave" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="#8b80f7"/><stop offset="1" stop-color="#514bd3"/></linearGradient>
+ <linearGradient id="deep" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#354aaf"/><stop offset="1" stop-color="#1d2a77"/></linearGradient>
+ <linearGradient id="wheel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d9bfff"/><stop offset="1" stop-color="#b695f5"/></linearGradient>
+ <clipPath id="wc1"><circle cx="552" cy="896" r="64"/></clipPath><clipPath id="wc2"><circle cx="812" cy="896" r="64"/></clipPath>
+</defs>
+<rect width="1248" height="1248" fill="url(#bg)"/>
+<!-- upper cart bowl -->
+<path d="M446 341 H488 C522 341 548 362 563 393 C575 420 596 437 632 437 H969 C1011 437 1042 478 1028 521 L946 757 C943 658 953 581 907 538 C883 515 850 507 812 507 C699 500 590 504 526 581 Z" fill="url(#lav)"/>
+<!-- inner upper fluid surface -->
+<path d="M464 397 C490 465 565 486 654 493 C725 500 772 501 819 507 C716 520 635 588 526 580 Z" fill="url(#wave)"/>
+<!-- inner darker liquid -->
+<path d="M526 580 C632 589 723 517 812 507 C903 507 944 556 946 652 L946 757 C935 793 910 823 883 844 C874 807 852 795 819 795 C810 726 762 693 658 670 C594 656 549 631 526 580 Z" fill="url(#deep)"/>
+<!-- handle and bottom bar -->
+<path d="M252 285 H363 C390 285 410 300 420 327 L538 677 C548 713 577 735 616 735 H840 C877 735 905 764 905 799 C905 817 896 832 883 844 C875 820 859 805 830 805 H550 C519 805 495 790 485 761 L375 396 C369 377 360 368 341 368 H252 C229 368 211 350 211 326 C211 303 230 285 252 285 Z" fill="url(#light)"/>
+<!-- spark -->
+<path d="M816 524 C826 580 849 607 914 620 C849 631 827 658 816 716 C804 660 781 631 718 620 C783 609 804 580 816 524 Z" fill="url(#light)"/>
+<!-- wheels -->
+<circle cx="552" cy="896" r="64" fill="url(#wheel)"/><circle cx="812" cy="896" r="64" fill="url(#wheel)"/>
+<path d="M501 942 C548 924 580 887 609 866 C630 920 590 962 552 960 C532 960 513 953 501 942Z" fill="url(#wave)" clip-path="url(#wc1)"/>
+<path d="M761 942 C808 924 840 887 869 866 C890 920 850 962 812 960 C792 960 773 953 761 942Z" fill="url(#wave)" clip-path="url(#wc2)"/>
+</svg>

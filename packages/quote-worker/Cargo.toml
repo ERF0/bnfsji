@@ -1,0 +1,20 @@
+[package]
+name = "bnafsaji-quote-worker"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+bnafsaji-quote-kernel = { path = "../quote-kernel" }
+futures-util = "0.3.34"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+worker = "=0.8.7"
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
